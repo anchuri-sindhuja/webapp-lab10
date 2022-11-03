@@ -4,8 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   p Sindhuja Anchuri
-  button(type='button',class='btn btn-secondary') press me
-
+  button(type='button',class='btn btn-secondary', onclick='doBump()') Press Me
   br
   div#bump Bump the count 
   br
@@ -18,6 +17,4 @@ block content
       bump=bump+1;
       print=document.getElementById("bump");
       print.innerHTML='Count '+count+' with bump '+bump;}
-
-
-
+  
